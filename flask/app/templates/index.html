@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+        <title>{{ title }} - 博客</title>
+        {% else %}
+        <title>欢迎来到博客</title>
+        {% endif %}
+</head>
+<body>
+    <h1> Hello ,{{ user.username }} !</h1>
+<div>
+    <p>
+        {{posts.author.username}}说:<b>{{posts.body}}</b>
+    </p>
+</div>
+    </body>
+</html>
